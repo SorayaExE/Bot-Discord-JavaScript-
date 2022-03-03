@@ -84,7 +84,7 @@ client.on("message", async message => {
     const soraya = client.users.cache.get('594251581789044756');
     let canal = client.channels.cache.get("711373672560066601")
     const joinEmbed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor('#80ccff')
     .setTitle(member.user.tag)
     .setAuthor('Desocupado-Bot', 'https://i.imgur.com/f5dzzNq.png')
     .setDescription('Bem-Vindo(a) ao Desocupados')

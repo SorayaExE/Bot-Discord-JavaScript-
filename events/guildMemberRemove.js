@@ -8,7 +8,7 @@ module.exports = async (client, member) =>{
     const soraya = client.users.cache.get('594251581789044756');
     let canal = client.channels.cache.get("711373673310978150");
     const leftEmbed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor('#bf80ff')
     .setTitle('; - ; triste estou')
     .setAuthor(member.user.tag, member.user.avatarURL())
     .setDescription(`${member.user.username} Saiu do servidor ; -;`)

@@ -22,7 +22,7 @@ exports.run = async (client, message, args) => {
     { name: 'Quantos membros o server precisa ter?', value: '170 membros ou mais.' },
     { name: 'Precisa de alguma tag de parceiros?', value: 'O server obrigatoriamente tem que ter um chat e uma tag para parceiros.' },
     { name: 'No mínimo quantos staffs?', value: 'O server precisa no mínimo ter 3 staffs ativos.' },
-    { name: 'Caso cumpra os requisitos chame o', value: `Oruzakッ#1828  no privado` }
+    { name: 'Caso cumpra os requisitos chame o', value: `chame um ADM no privado` }
   )
   .setTimestamp()
   .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL())
