@@ -5,10 +5,6 @@ const fetch = require('node-fetch');
 const moment = require('moment');
 require('moment-duration-format');
 
-
-
-app.listen(process.env.PORT); // Recebe solicitações que o deixa online
-
 client.on("ready", () => {
   console.log(`O bot foi iniciado, com ${client.users.cache.size} usuários e em ${client.guilds.cache.size} servidores.`);
   let activities = [
