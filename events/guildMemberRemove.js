@@ -1,8 +1,10 @@
 
 
 
-client.on("guildMemberRemove", async member => {
-  
+module.exports = async (client, member) =>{
+    const Discord = require("discord.js");
+
+	const embed = new Discord.MessageEmbed()
     const soraya = client.users.cache.get('594251581789044756');
     let canal = client.channels.cache.get("711373673310978150");
     const leftEmbed = new Discord.MessageEmbed()
@@ -14,4 +16,4 @@ client.on("guildMemberRemove", async member => {
     .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL());
 
     canal.send(leftEmbed);
-});
+};
