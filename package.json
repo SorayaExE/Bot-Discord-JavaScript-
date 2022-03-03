@@ -1,0 +1,30 @@
+{
+  "name": "Desocupados",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "16.x"
+  },
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-bot-api": "^0.1.2",
+    "alexa-bot-api-v3": "^3.0.8",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.3",
+    "firebase": "^7.15.5",
+    "gif-to-apng": "^0.1.2",
+    "jimp": "^0.6.0",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.3.2",
+    "node-fetch": "^2.6.0",
+    "novelcovid": "^2.1.1",
+    "uuid": "^8.1.0"
+  }
+}
