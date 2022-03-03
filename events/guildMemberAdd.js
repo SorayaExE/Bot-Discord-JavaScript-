@@ -1,6 +1,6 @@
 
 
-module.exports = async (client, member) =>{
+client.on("guildMemberAdd", async member => {
     const Discord = require("discord.js");
 
     const embed = new Discord.MessageEmbed()
@@ -23,4 +23,4 @@ module.exports = async (client, member) =>{
   
   
     canal.send(joinEmbed);
-    };
+    });
