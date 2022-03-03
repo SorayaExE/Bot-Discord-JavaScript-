@@ -17,7 +17,7 @@ module.exports = async (client, member) =>{
       { name: 'Não esqueça de se registrar no:', value: '<#711373689504923708>' }
     )
     .addField('Leia as regras', '<#711670368112476181>', true)
-      .setImage('https://imgur.com/AkKfTAI.gif')
+      .setImage('https://imgur.com/HyFTDqo.gif')
       .setTimestamp()
       .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL());
   
