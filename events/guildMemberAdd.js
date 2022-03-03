@@ -1,7 +1,9 @@
 
 
 module.exports = async (client, member) =>{
+    const Discord = require("discord.js");
 
+    const embed = new Discord.MessageEmbed()
     const soraya = client.users.cache.get('594251581789044756');
     let canal = client.channels.cache.get("711373672560066601")
     const joinEmbed = new Discord.MessageEmbed()
