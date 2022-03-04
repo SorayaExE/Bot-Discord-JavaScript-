@@ -37,6 +37,7 @@ module.exports = {
          .setAuthor('Tempo em Call', {iconURL: avatar})
          .setTitle('Tempo Call | ' + nick)
          .addField('Tempo Salvo', `**${tempo}**`)
+         .setFooter('PINTO GROSSO')
          .setColor("RANDOM")
          .setThumbnail(message.guild.iconURL({ dynamic: true }))
          
