@@ -68,6 +68,6 @@ module.exports = {
              embed.setFooter({ text: 'Ao sair da call, seu tempo acumulado será adicionado ao tempo total!'})
             }
            }
-         message.reply({ embeds: [embed] })
+         message.channel.send(embed)
   },
 };
