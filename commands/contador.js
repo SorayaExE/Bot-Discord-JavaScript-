@@ -1,5 +1,4 @@
 const { MessageActionRow, MessageButton } = require('discord.js')
-const Command = require('../../structures/Command')
 
 const actionRow = new MessageActionRow()
     .addComponents(
