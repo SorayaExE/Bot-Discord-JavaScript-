@@ -34,10 +34,10 @@ module.exports = {
          let nick = usuario.user.username
 
          let embed = new Discord.MessageEmbed()
-         .setAuthor('Tempo em Call', {iconURL: avatar})
+         .setAuthor({ name: 'Tempo em Call', iconURL: avatar})
          .setTitle('Tempo Call | ' + nick)
          .addField('Tempo Salvo', `**${tempo}**`)
-         .setFooter('PINTO GROSSO')
+         .setFooter({ text: `ID : ${usuario.id}`})
          .setColor("RANDOM")
          .setThumbnail(message.guild.iconURL({ dynamic: true }))
          
