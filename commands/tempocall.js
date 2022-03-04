@@ -3,7 +3,7 @@ const ms = require('milliseconds');
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'tempcall',
+    name: 'tempocall',
     aliases: ['tp', 'tpc', 'tempcall'],
 
     run: async(client, message, args) => {
