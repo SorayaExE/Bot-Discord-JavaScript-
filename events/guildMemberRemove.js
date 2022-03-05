@@ -11,8 +11,9 @@ module.exports = async (client, member) =>{
     .setColor('#bf80ff')
     .setTitle('; - ; triste estou')
     .setAuthor(member.user.tag, member.user.avatarURL())
-    .setDescription(`${member.user.username} Saiu do servidor ; -;`)
+    .setDescription(`${member.user.username} saiu do servidor ; -;`)
     .setThumbnail(member.user.avatarURL())
+    .setImage('https://imgur.com/ZA3bL9D')
     .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL());
 
     canal.send(leftEmbed);
