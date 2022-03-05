@@ -13,7 +13,7 @@ module.exports = async (client, member) =>{
     .setAuthor(member.user.tag, member.user.avatarURL())
     .setDescription(`${member.user.username} saiu do servidor ; -;`)
     .setThumbnail(member.user.avatarURL())
-    .setImage('https://imgur.com/ZA3bL9D')
+    .setImage('https://imgur.com/ZA3bL9D.gif')
     .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL());
 
     canal.send(leftEmbed);
