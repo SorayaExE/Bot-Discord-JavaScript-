@@ -16,11 +16,11 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('RANDOM')
-  .setDescription('Esta usando?')
+  .setDescription('')
   .addFields(
-    { name: 'PC', value: ':computer:' },
-    { name: 'Mobile', value: ':iphone:' },
-    { name: 'Outros', value: ':candy:' }
+    { name: '', value: '' },
+    { name: '', value: '' },
+    { name: '', value: '' }
   )
   await message.channel.send(embed);
 

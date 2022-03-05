@@ -16,10 +16,11 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('RANDOM')
-  .setDescription('Qual você prefere?')
+  .setDescription('Qual o seu gênero?')
   .addFields(
-    { name: 'Doce', value: ':dango:' },
-    { name: 'Salgado', value: ':hamburger:' }
+    { name: 'Homem', value: ':man_tipping_hand:' },
+    { name: 'Mulher', value: ':woman_tipping_hand:' },
+    { name: 'Outros', value: ':grey_question:' }
   )
   await message.channel.send(embed);
 
