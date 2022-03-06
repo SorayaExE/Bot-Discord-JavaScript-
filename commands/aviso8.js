@@ -17,11 +17,18 @@ exports.run = async (client, message, args) => {
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
   .setTitle('Aqui você poderá escolher a cor que vai ficar no seu nome 👇')
-  .setDescription('')
+  .setDescription('Como obter cores no server? Clique no emoji relativo a cor que você deseja. Caso nao tenha gostado da cor ou queira trocá-la basta remover a reação antiga e reagir no emoji referente a uma nova cor, caso contrário a cor desejada pode não funcionar.')
   .addFields(
-    { name: '0️⃣ 👉<@711373652700037191>', value: "\u200B"},
-    { name: 'Hetero', value: '<a:U_pepo_pato:949191315025981460>' },
-    { name: 'Indefinido', value: '<a:U_pepo_rgb:714717157656756235>'}
+    { name: '🖤👉Preto', value: "\u200B"},
+    { name: '🤍👉Branco', value: "\u200B"},
+    { name: '💙👉Azul', value: "\u200B"},
+    { name: '💚👉Verde', value: "\u200B"},
+    { name: '💜👉Roxo', value: "\u200B"},
+    { name: '💗👉Rosa escuro', value: "\u200B"},
+    { name: '❤️👉Vermelho', value: "\u200B"},
+    { name: '🤎👉Marrom', value: "\u200B"},
+    { name: '🧡👉Laranja', value: "\u200B"},
+    { name: '💛 👉Amarelo', value: "\u200B"}
   )
   await message.channel.send(embed);
 
