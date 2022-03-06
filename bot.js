@@ -23,7 +23,6 @@ client.on("ready", () => {
     `Você na minha cama`,
     `Meu prefixo é d!`,
     `Trabaiando para o Soraya`,
-    `Venha conversar comigo no chat de Inteligencia-artificial!`,
     `Utilize ${config.prefix}help para obter ajuda!`,
     `Estou na versão 2.0`
   ],
