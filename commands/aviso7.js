@@ -16,11 +16,7 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setDescription('Qual sua idade?')
-  .addFields(
-    { name: '+18', value: ':beer:' },
-    { name: '-18', value: ':underage:' }
-  )
+  .setDescription('Olá seja bem vindo ao nosso servidor,antes de tudo precisamos que vc se registre e vire um membro por completo!...siga os passos abaixo:point_down::point_down::point_down:')
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>
@@ -28,4 +24,4 @@ exports.run = async (client, message, args) => {
   )
 
 
-}               
+}

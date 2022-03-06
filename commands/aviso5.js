@@ -16,10 +16,11 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setDescription('Qual sua idade?')
+  .setDescription('Você está:')
   .addFields(
-    { name: '+18', value: ':beer:' },
-    { name: '-18', value: ':underage:' }
+    { name: 'Casado', value: ':bride_with_veil:' },
+    { name: 'Namorando', value: ':couple_with_heart:' },
+    { name: 'Solteiro', value: ':person_tipping_hand:'}
   )
   await message.channel.send(embed);
 
@@ -28,4 +29,4 @@ exports.run = async (client, message, args) => {
   )
 
 
-}               
+}

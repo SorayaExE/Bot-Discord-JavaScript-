@@ -16,14 +16,14 @@ exports.run = async (client, message, args) => {
   const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('RANDOM')
+  .setColor('#F0E68C')
   .setTitle(`<a:oveia:715776701677961297>Requisitos para parceria Desocupados<a:oveia:715776701677961297>`)
   .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
   .addFields(
     { name: 'Quantos membros o server precisa ter?', value: '170 membros ou mais.' },
     { name: 'Precisa de alguma tag de parceiros?', value: 'O server obrigatoriamente tem que ter um chat e uma tag para parceiros.' },
     { name: 'No mínimo quantos staffs?', value: 'O server precisa no mínimo ter 3 staffs ativos.' },
-    { name: 'Caso cumpra os requisitos:', value: `Chame um ADM no privado` }
+    { name: 'Caso cumpra os requisitos:', value: `Chame um ADM no privado.` }
   )
   .setTimestamp()
   .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL())

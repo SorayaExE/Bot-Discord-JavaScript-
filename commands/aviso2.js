@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
   const soraya = client.users.cache.get('594251581789044756');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('RANDOM')
+  .setColor('#FFE4E1')
   .setDescription('Qual o seu gênero?')
   .addFields(
     { name: 'Homem', value: ':man_tipping_hand:'},

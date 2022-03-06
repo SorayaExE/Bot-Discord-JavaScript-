@@ -15,12 +15,13 @@ exports.run = async (client, message, args) => {
   const soraya = client.users.cache.get('594251581789044756');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('RANDOM')
+  .setColor('#FFE4E1')
   .setDescription('')
   .addFields(
-    { name: '', value: '' },
-    { name: '', value: '' },
-    { name: '', value: '' }
+    { name: 'Agora a perguta q todos querem saber....', value: 'Você prefere:' },
+    { name: 'Loli', value: ':man_police_officer:' },
+    { name: 'Oppai', value: ':new_moon_with_face:' },
+    { name: 'Futanari', value: ':eggplant:'}
   )
   await message.channel.send(embed);
 
