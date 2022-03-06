@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
   .setTitle('Aqui você poderá escolher a cor que vai ficar no seu nome 👇')
   .setDescription('')
   .addFields(
-    { name: '0️⃣ 👉', value: '@๑˚₊ ⇢ Preto ｡ﾟ･ ', inline: true },
+    { name: '0️⃣ 👉@๑˚₊ ⇢ Preto ｡ﾟ･', value: "\u200B"},
     { name: 'Hetero', value: '<a:U_pepo_pato:949191315025981460>' },
     { name: 'Indefinido', value: '<a:U_pepo_rgb:714717157656756235>'}
   )
