@@ -13,12 +13,16 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
-  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
-  .setDescription('Obrigado por se registrar:sparkling_heart: agora vc realmente é um desocupado<a:rgb_oveia:715776701677961297>')
+  .setTitle('Aqui você poderá escolher a cor que vai ficar no seu nome 👇')
+  .setDescription('')
+  .addFields(
+    { name: '0️⃣ 👉', value: '@๑˚₊ ⇢ Preto ｡ﾟ･ ', inline: true },
+    { name: 'Hetero', value: '<a:U_pepo_pato:949191315025981460>' },
+    { name: 'Indefinido', value: '<a:U_pepo_rgb:714717157656756235>'}
+  )
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>
