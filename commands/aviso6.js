@@ -16,9 +16,9 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setTitle('Você se considera:')
+  .setTitle('Em que você deseja ser mencionado?')
   .addFields(
-    { name: 'LGBT+(<a:rgb_smile:714717157178736650>) Hétero(<a:U_pepo_pato:949191315025981460>) Indefinido(<a:U_pepo_rgb:714717157656756235>)', value: "\u200B" }
+    { name: 'Avisos e novidades(:warning:) Parcerias(:handshake:) Votações(:white_check_mark:) Sorteios(:partying_face:)', value: "\u200B" }
   )
   await message.channel.send(embed);
 
