@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
     const usuario = message.guild.members.cache.get(message.mentions.users.first().id);
-const cargopreso = message.guild.roles.cache.find(role => role.name === '--{😷}Corola Vairus--');
+const cargopreso = message.guild.roles.cache.find(role => role.name === '˚₊✿ 😷Corola Vairus ୧⊹');
     if (!message.member.permissions.has("MANAGE_MESSAGES")){
 
         const soraya = client.users.cache.get('594251581789044756');
