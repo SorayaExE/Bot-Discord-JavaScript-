@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
   .setDescription('Você se considera:')
   .addFields(
     { name: 'L.G.B.T', value: '<a:rgb_smile:714717157178736650>' },
-    { name: 'Hetero', value: '<a:doguin:723454274390065152>' },
+    { name: 'Hetero', value: '<a:U_pepo_pato:949191315025981460>' },
     { name: 'Indefinido', value: '<a:U_pepo_rgb:714717157656756235>'}
   )
   await message.channel.send(embed);
