@@ -13,10 +13,12 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
+  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setDescription('Aqui você poderá escolher a cor que vai ficar no seu nome 👇')
+  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
+  .setDescription('Obrigado por se registrar:sparkling_heart: agora vc realmente é um desocupado<a:oveia:715776701677961297>')
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>

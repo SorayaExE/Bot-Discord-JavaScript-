@@ -18,9 +18,7 @@ exports.run = async (client, message, args) => {
   .setColor('#FFE4E1')
   .setDescription('Qual o seu gênero?')
   .addFields(
-    { name: 'Homem', value: ':man_tipping_hand:'},
-    { name: 'Mulher', value: ':woman_tipping_hand:' },
-    { name: 'Outro', value: ':grey_question:' }
+    { name: 'Homem(:man_tipping_hand:) Mulher(:woman_tipping_hand:) Outro(:grey_question:)', value: "\u200B"}
   )
   await message.channel.send(embed);
 
