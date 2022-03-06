@@ -18,7 +18,7 @@ exports.run = async (client, message, args) => {
   const embed = new Discord.MessageEmbed()
   .setColor('RANDOM')
   .setTitle(`<a:oveia:715776701677961297>Requisitos para parceria Desocupados<a:oveia:715776701677961297>`)
-  .setAuthor('Desocupado-Bot', desocupado.avatarURL())
+  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
   .addFields(
     { name: 'Quantos membros o server precisa ter?', value: '170 membros ou mais.' },
     { name: 'Precisa de alguma tag de parceiros?', value: 'O server obrigatoriamente tem que ter um chat e uma tag para parceiros.' },
