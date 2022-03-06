@@ -18,9 +18,7 @@ exports.run = async (client, message, args) => {
   .setColor('#FFE4E1')
   .setDescription('Você se considera:')
   .addFields(
-    { name: 'L.G.B.T', value: '<a:rgb_smile:714717157178736650>' },
-    { name: 'Hetero', value: '<a:U_pepo_pato:949191315025981460>' },
-    { name: 'Indefinido', value: '<a:U_pepo_rgb:714717157656756235>'}
+    { name: 'LGBT+(<a:rgb_smile:714717157178736650>) Hétero(<a:U_pepo_pato:949191315025981460>) Indefinido(<a:U_pepo_rgb:714717157656756235>)', value: "\u200B" }
   )
   await message.channel.send(embed);
 

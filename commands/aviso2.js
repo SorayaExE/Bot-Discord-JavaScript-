@@ -16,7 +16,8 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setDescription('Qual o seu gênero?')
+  .setTitle('Qual o seu gênero?')
+  .setDescription('')
   .addFields(
     { name: 'Homem(:man_tipping_hand:) Mulher(:woman_tipping_hand:) Outro(:grey_question:)', value: "\u200B"}
   )

@@ -13,14 +13,11 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
+  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setTitle('Agora a perguta q todos querem saber....')
-  .setDescription('Você prefere:')
-  .addFields(
-    { name: 'Loli(:man_police_officer:) Oppai(:new_moon_with_face:) Futanari(:eggplant:)', value: "\u200B" }
-  )
+  .setDescription('Olá seja bem vindo ao nosso servidor,antes de tudo precisamos que vc se registre e vire um membro por completo!...siga os passos abaixo:point_down::point_down::point_down:')
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>
@@ -28,4 +25,4 @@ exports.run = async (client, message, args) => {
   )
 
 
-}     
+}

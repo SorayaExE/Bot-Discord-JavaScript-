@@ -18,9 +18,7 @@ exports.run = async (client, message, args) => {
   .setColor('#FFE4E1')
   .setDescription('Você está:')
   .addFields(
-    { name: 'Casado', value: ':bride_with_veil:' },
-    { name: 'Namorando', value: ':couple_with_heart:' },
-    { name: 'Solteiro', value: ':person_tipping_hand:'}
+    { name: 'Casado(:bride_with_veil:) Namorando(:couple_with_heart:) Solteiro(:person_tipping_hand:)', value: "\u200B"}
   )
   await message.channel.send(embed);
 
