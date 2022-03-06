@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setDescription('Você se considera:')
+  .setTitle('Você se considera:')
   .addFields(
     { name: 'LGBT+(<a:rgb_smile:714717157178736650>) Hétero(<a:U_pepo_pato:949191315025981460>) Indefinido(<a:U_pepo_rgb:714717157656756235>)', value: "\u200B" }
   )

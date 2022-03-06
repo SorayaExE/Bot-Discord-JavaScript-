@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setDescription('Você está:')
+  .setTitle('Você está:')
   .addFields(
     { name: 'Casado(:bride_with_veil:) Namorando(:couple_with_heart:) Solteiro(:person_tipping_hand:)', value: "\u200B"}
   )
