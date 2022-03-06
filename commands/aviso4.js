@@ -16,11 +16,11 @@ exports.run = async (client, message, args) => {
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('RANDOM')
-  .setDescription('Qual o seu gênero?')
+  .setDescription('')
   .addFields(
-    { name: 'Homem', value: ':man_tipping_hand:'},
-    { name: 'Mulher', value: ':woman_tipping_hand:' },
-    { name: 'Outro', value: ':grey_question:' }
+    { name: '', value: '' },
+    { name: '', value: '' },
+    { name: '', value: '' }
   )
   await message.channel.send(embed);
 
@@ -29,4 +29,4 @@ exports.run = async (client, message, args) => {
   )
 
 
-}               
+}     
