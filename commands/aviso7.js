@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
   .setTitle('Qual é o seu elo?')
   .addFields(
     { name: '<:c_ferro:950200841804058684>Ferro', value: "\u200B"},
-    { name: ':c_bronze:950200860108017755>Bronze', value: "\u200B"},
+    { name: '<:c_bronze:950200860108017755>Bronze', value: "\u200B"},
     { name: '<:c_prata:950200879800287382>Prata', value: "\u200B"},
     { name: '<:c_ouro:950200901061210112>Ouro', value: "\u200B"},
     { name: '<:c_platina:950200916898898001>Platina', value: "\u200B"},
