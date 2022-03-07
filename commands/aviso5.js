@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
   const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('#FFE4E1')
+  .setColor('#DA70D6')
   .setTitle('<:d_mastery:949346273461432441> Bem-vindo a área dos League players! <:d_mastery:949346273461432441>')
   .setDescription('Selecione abaixo quais lanes você joga e qual o seu elo no League Of Legends/Wild Rift. ')
   .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
