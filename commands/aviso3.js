@@ -21,7 +21,7 @@ const embed = new Discord.MessageEmbed()
 .setDescription('Requisitos para ser vip no Desocupados:')
 .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
 .addFields(
-  { name: '<a:Y_kanna_piano:779339602812076052>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨', value: `Ser ativo no servidor \nSer registrado no canal<#711373689504923708> \nTer 20 invites` },
+  { name: '<a:Y_cafe:749473046074622023>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨', value: `Ser ativo no servidor \nSer registrado no canal<#711373689504923708> \nTer 20 invites` },
   { name: '<a:L_bongo_cat:949191419447357530>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨 𝐩𝐥𝐮𝐬 ', value: `Ser ativo no servidor \nSer registrado no canal<#711373689504923708> \nTer 35 invites \nEstar nivel 8 na Loritta` },
   { name: '<a:Y_Nezuko_jump:949186370834956289>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨 𝐦𝐚𝐠𝐧𝐚𝐭𝐚', value: `Ser ativo no servidor \nSer registrado no canal<#711373689504923708> \nTer 50 invites \nEstar nivel 12 na Loritta` }
 )
@@ -29,7 +29,7 @@ const embed = new Discord.MessageEmbed()
 .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL())
 await message.channel.send(embed);
 
-message.channel.send('@everyone').then(marcados =>
+message.channel.send('').then(marcados =>
   marcados.delete()
 )
 

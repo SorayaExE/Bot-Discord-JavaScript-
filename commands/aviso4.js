@@ -21,7 +21,7 @@ const embed = new Discord.MessageEmbed()
 .setDescription('Benefícios para vips no Desocupados:')
 .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
 .addFields(
-  { name: '<a:Y_kanna_piano:779339602812076052>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨', value: `Permissão para enviar imagens no chat<#711373689504923708> \n200k na economia \nTag exclusiva (Desocupado) \nSala Vip` },
+  { name: '<a:Y_cafe:749473046074622023>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨', value: `Permissão para enviar imagens no chat<#711373689504923708> \n200k na economia \nTag exclusiva (Desocupado) \nSala Vip` },
   { name: '<a:L_bongo_cat:949191419447357530>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨 𝐩𝐥𝐮𝐬 ', value: `Permissão para enviar imagens no chat<#711373689504923708> \n500k na economia \nTag exclusiva (Desocupado Plus) \nSala vip \nNitro classic (1 mês)` },
   { name: '<a:Y_Nezuko_jump:949186370834956289>𝐃𝐞𝐬𝐨𝐜𝐮𝐩𝐚𝐝𝐨 𝐦𝐚𝐠𝐧𝐚𝐭𝐚', value: `Sala e call exclusiva para você e seus amigos \nSorteios vips \nPermissão para adicionar emojis \nDiscord Nitro (1 mês) \n1kk na economia \nTag exclusiva (Desocupado Magnata)` }
 )
@@ -29,7 +29,7 @@ const embed = new Discord.MessageEmbed()
 .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL())
 await message.channel.send(embed);
 
-message.channel.send('@everyone').then(marcados =>
+message.channel.send('').then(marcados =>
   marcados.delete()
 )
 
