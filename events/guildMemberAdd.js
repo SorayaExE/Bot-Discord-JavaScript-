@@ -5,11 +5,12 @@ module.exports = async (client, member) =>{
 
     const embed = new Discord.MessageEmbed()
     const soraya = client.users.cache.get('594251581789044756');
+    const desocupado = client.users.cache.get('948819280932261918');
     let canal = client.channels.cache.get("711373672560066601")
     const joinEmbed = new Discord.MessageEmbed()
       .setColor('#bf80ff')
       .setTitle(member.user.tag)
-      .setAuthor('Desocupado-Bot', 'https://i.imgur.com/f5dzzNq.png')
+      .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
       .setDescription('Bem-Vindo(a) ao Desocupados')
       .setThumbnail(member.user.avatarURL())
       .addFields(

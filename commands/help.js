@@ -6,10 +6,11 @@ var list = [
 ];
 let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
+  const desocupado = client.users.cache.get('948819280932261918');
   const embed = new Discord.MessageEmbed()
   .setColor('#0099ff')
   .setTitle('Help Desocupado Bot')
-  .setAuthor('Desocupado-Bot', 'https://i.imgur.com/f5dzzNq.png')
+  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
   .setDescription('Aqui vai os meus comandos')
   .addFields(
   { name: 'Lembrando que comandos obcenos é em:', value: '<#711495500523765841>' },
