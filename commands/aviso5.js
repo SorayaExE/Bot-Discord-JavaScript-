@@ -20,13 +20,6 @@ exports.run = async (client, message, args) => {
   .setTitle('<:d_mastery:949346273461432441> Bem-vindo a área dos League players! <:d_mastery:949346273461432441>')
   .setDescription('Selecione abaixo quais lanes você joga e qual o seu elo no League Of Legends/Wild Rift. ')
   .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
-  .addFields(
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"}
-  )
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>

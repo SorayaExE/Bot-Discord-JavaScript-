@@ -20,13 +20,6 @@ exports.run = async (client, message, args) => {
   .setTitle('<a:M_nintendo:949182151612588092> Bem vindo a área gamer! <a:M_nintendo:949182151612588092>')
   .setDescription('Selecione os jogos que você joga para receber os respectivos cargos e liberar mais chats e calls!')
   .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
-  .addFields(
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"},
-    { name: '', value: "\u200B"}
-  )
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>
