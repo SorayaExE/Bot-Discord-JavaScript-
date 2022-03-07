@@ -15,10 +15,14 @@ exports.run = async (client, message, args) => {
   const soraya = client.users.cache.get('594251581789044756');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('#FFE4E1')
-  .setTitle('Em que você deseja ser mencionado?')
+  .setColor('#DA70D6')
+  .setTitle('Qual lane você joga?')
   .addFields(
-    { name: 'Avisos e novidades(:warning:) Parcerias(:handshake:) Votações(:white_check_mark:) Sorteios(:partying_face:)', value: "\u200B" }
+    { name: '<:c_top:949346325147815966>Top', value: "\u200B"},
+    { name: '<:c_jungle:949346393464635473>Jungle', value: "\u200B"},
+    { name: '<:c_mid:949346347549597696>Mid', value: "\u200B"},
+    { name: '<:c_adc:949346371280986222>Adc', value: "\u200B"},
+    { name: '<:c_sup:949346307905052732>Sup', value: "\u200B"}
   )
   await message.channel.send(embed);
 

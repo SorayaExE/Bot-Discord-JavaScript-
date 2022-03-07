@@ -13,12 +13,19 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
+  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
   .setColor('#FFE4E1')
-  .setTitle('Você está:')
+  .setTitle('<:d_mastery:949346273461432441> Bem-vindo a área dos League players! <:d_mastery:949346273461432441>')
+  .setDescription('Selecione abaixo quais lanes você joga e qual o seu elo no League Of Legends/Wild Rift. ')
+  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
   .addFields(
-    { name: 'Casado(:bride_with_veil:) Namorando(:couple_with_heart:) Solteiro(:person_tipping_hand:)', value: "\u200B"}
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"}
   )
   await message.channel.send(embed);
 

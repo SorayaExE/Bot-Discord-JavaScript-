@@ -13,19 +13,19 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
-  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('#F0E68C')
-  .setTitle(`<a:J_butterfly:949191895991586896>𝐓𝐢𝐩𝐨𝐬 𝐝𝐞 𝐩𝐮𝐧𝐢𝐜𝐨𝐞𝐬<a:J_butterfly:949191895991586896>`)
-  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
+  .setColor('#4B0082')
+  .setTitle('Quais jogos você joga? ')
   .addFields(
-    { name: '<:J_dialogo:949182184714031117>𝐋𝐞𝐯𝐞', value: 'Receberá um aviso da Staff.' },
-    { name: '<:Y_Kanna_what:712291567506817134>𝐌é𝐝𝐢𝐨', value: 'Mute temporário.' },
-    { name: '<:A_ban:949347325086695426>𝐆𝐫𝐚𝐯𝐞', value: 'Ban permanente.' }
+    { name: '<:d_lolzinho:949192763335933973> League Of Legends', value: "\u200B"},
+    { name: '<:d_wr:950184935019405375>Wild Rift', value: "\u200B"},
+    { name: '<:d_Valorant:950178910740566066>Valorant', value: "\u200B"},
+    { name: '<:d_Genshin_Impact:950178953581199360>Genshin Impact', value: "\u200B"},
+    { name: '<:d_minecraft:950179143633502279>Minecraft', value: "\u200B"},
+    { name: '<:d_csgo:950178980051439646>CS:GO', value: "\u200B"},
+    { name: '🎮Outros', value: "\u200B"}
   )
-  .setTimestamp()
-  .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL())
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>

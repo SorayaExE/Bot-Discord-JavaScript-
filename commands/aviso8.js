@@ -13,22 +13,19 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
+  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('#FFE4E1')
-  .setTitle('Aqui você poderá escolher a cor que vai ficar no seu nome 👇')
-  .setDescription('Como obter cores no server? Clique no emoji relativo a cor que você deseja. Caso não tenha gostado da cor ou queira trocá-la basta remover a reação antiga e reagir no emoji referente a uma nova cor, caso contrário a cor desejada pode não funcionar.')
+  .setColor('#4B0082')
+  .setTitle('<a:M_nintendo:949182151612588092> Bem vindo a área gamer! <a:M_nintendo:949182151612588092>')
+  .setDescription('Selecione os jogos que você joga para receber os respectivos cargos e liberar mais chats e calls!')
+  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
   .addFields(
-    { name: '🖤👉Preto', value: "\u200B"},
-    { name: '🤍👉Branco', value: "\u200B"},
-    { name: '💙👉Azul', value: "\u200B"},
-    { name: '💚👉Verde', value: "\u200B"},
-    { name: '💜👉Roxo', value: "\u200B"},
-    { name: '💗👉Rosa escuro', value: "\u200B"},
-    { name: '❤️👉Vermelho', value: "\u200B"},
-    { name: '🤎👉Marrom', value: "\u200B"},
-    { name: '🧡👉Laranja', value: "\u200B"},
-    { name: '💛 👉Amarelo', value: "\u200B"}
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"},
+    { name: '', value: "\u200B"}
   )
   await message.channel.send(embed);
 

@@ -13,12 +13,21 @@ exports.run = async (client, message, args) => {
     }
   let avatar = message.author.displayAvatarURL({format: "png"});
   const soraya = client.users.cache.get('594251581789044756');
-  const desocupado = client.users.cache.get('948819280932261918');
   message.delete().catch(O_o => {});
   const embed = new Discord.MessageEmbed()
-  .setColor('#FFE4E1')
-  .setAuthor(`${desocupado.username}`, desocupado.avatarURL())
-  .setDescription('Obrigado por se registrar:sparkling_heart: agora vc realmente é um desocupado<a:oveia:715776701677961297>')
+  .setColor('#DA70D6')
+  .setTitle('Qual é o seu elo?')
+  .addFields(
+    { name: '<:c_ferro:950200841804058684>Ferro', value: "\u200B"},
+    { name: ':c_bronze:950200860108017755>Bronze', value: "\u200B"},
+    { name: '<:c_prata:950200879800287382>Prata', value: "\u200B"},
+    { name: '<:c_ouro:950200901061210112>Ouro', value: "\u200B"},
+    { name: '<:c_platina:950200916898898001>Platina', value: "\u200B"},
+    { name: '<:c_diamante:950200933806120960>Diamante', value: "\u200B"},
+    { name: '<:c_mestre:950200953267716096>Mestre', value: "\u200B"},
+    { name: '<:c_graomestre:950200967897423872>Grão-Mestre', value: "\u200B"},
+    { name: '<:c_desafiante:950200982082576394>Desafiante', value: "\u200B"}
+  )
   await message.channel.send(embed);
 
   message.channel.send('@everyone').then(marcados =>
