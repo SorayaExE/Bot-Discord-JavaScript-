@@ -29,7 +29,7 @@ const embed = new Discord.MessageEmbed()
 .setFooter(`Desenvolvido por: ${soraya.tag} `, soraya.avatarURL())
 await message.channel.send(embed);
 
-message.channel.send('').then(marcados =>
+message.channel.send('@everyone').then(marcados =>
   marcados.delete()
 )
 
